@@ -1,0 +1,75 @@
+! ----------------------------------------------------------------------------
+! vim:ai:si:et:ft=xdefaults:
+! ----------------------------------------------------------------------------
+
+!URxvt*scrollBar:false
+
+! From http://phraktured.net/terminal-colors/
+
+!Theme Twelve
+*foreground: rgb:ff/ff/ff
+*background: rgb:10/10/10
+*color0:     rgb:00/00/00
+*color1:     rgb:bf/72/76
+*color2:     rgb:86/af/80
+*color3:     rgb:96/8a/38
+*color4:     rgb:36/73/b5
+*color5:     rgb:9a/70/b2
+*color6:     rgb:7a/be/cc
+*color7:     rgb:db/db/db
+*color8:     rgb:66/92/af
+*color9:     rgb:e5/50/5f
+*color10:    rgb:87/bc/87
+*color11:    rgb:e0/d9/5c
+*color12:    rgb:1b/85/d6
+*color13:    rgb:ad/73/ba
+*color14:    rgb:33/8e/aa
+*color15:    rgb:f4/f4/f4
+
+Xcursor*theme:  Vanilla-DMZ-AA
+Xcursor.size:   22
+
+*utf8: 1
+!*faceSize: 10
+*jumpScroll: true
+*multiScroll: true
+*boldMode: false
+*scrollBar: false
+*cutNewline: false
+*scrollTtyOutput: false
+*scrollKey: true
+!*cursorBlink: true
+*dynamicColors: true
+*saveLines: 5000
+*geometry: 125x45
+
+!Xft.dpi: 96
+Xft.antialias: 1
+Xft.rgba: rgb
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+
+urxvt*font:        xft:Droid Sans Mono:style=Regular:pixelsize=13
+urxvt*boldFont:    xft:Droid Sans Mono:style=Bold:pixelsize=13
+
+!urxvt*font:        xft:Consolas:pixelsize=12:antialias=true:hinting=true:hintstyle=hintfull
+!urxvt*boldFont:    xft:Consolas:pixelsize=12:antialias=true:hinting=true:hintstyle=hintfull
+
+! URxvt
+
+URxvt*termName:                xterm
+URxvt.font:                    xft:Bitstream Vera Sans Mono:antialias=true:pixelsize=12
+!urxvt.font:                    xft:Bitstream Vera Sans Mono-12:antialias=true
+URxvt*transparent:            false
+URxvt*tintColor:            #666666
+URxvt*shading:                50
+URxvt*scrollBar:            false
+URxvt*internalBorder:        5
+URxvt*urgentOnBell:         true
+URxvt*scrollTtyKeypress:    true
+URxvt*underlineColor:        yellow
+URxvt*perl-ext-common:        default,matcher
+URxvt*urlLauncher:            google-chrome
+URxvt*matcher.button:        1
+URxvt*matcher.pattern.1:    \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
+
