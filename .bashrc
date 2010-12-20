@@ -5,5 +5,5 @@
 alias ls='ls --color=auto'
 PS1='[\u \w]\$ '
 
-export EDITOR=vim
+export EDITOR=emacsclient
 export PATH=/home/msmith/bin:$PATH
