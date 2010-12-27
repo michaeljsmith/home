@@ -10,3 +10,6 @@
 (add-to-list 'load-path "~/.emacs.d/site-lisp/vimpulse-surround")
 (require 'vimpulse)
 (require 'vimpulse-surround)
+
+(vimpulse-imap (kbd "C-d") 'viper-intercept-ESC-key)
+(vimpulse-map (kbd "C-d") 'save-buffer)
