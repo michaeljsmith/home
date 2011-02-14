@@ -11,7 +11,6 @@ wicd-client &
 skype &
 pidgin &
 google-chrome --memory-model=low &
-checkgmail &
 emacs --daemon
 
 while true;
