@@ -7,3 +7,9 @@
 [submodule "vim/vim-surround"]
 	path = vim/vim-surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule "vim/vcscommand"]
+	path = vim/vcscommand
+	url = git://repo.or.cz/vcscommand
+[submodule "vim/vim-colours-dark-lord"]
+	path = vim/vim-colours-dark-lord
+	url = git@github.com:michaeljsmith/vim-colours-dark-lord.git

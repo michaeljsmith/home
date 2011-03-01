@@ -16,14 +16,14 @@ set guifont=Droid\ Sans\ Mono\ 10
 set runtimepath+=~/src/vim/vim-indent-object
 
 " Set up vcscommand.
-set runtimepath+=~/src/vim/vcscommand
+set runtimepath+=~/.home/vim/vcscommand
 
 " Set up colour scheme.
-set runtimepath+=~/src/vim/vim-colours-dark-lord
+set runtimepath+=~/.home/vim/vim-colours-dark-lord
 colorscheme darklord
 
 " Set up jest filetype.
-set runtimepath+=~/src/jest/contrib/vim
+"set runtimepath+=~/src/jest/contrib/vim
 
 " Set up fuzzy finder.
 set runtimepath+=~/src/vim/vim-l9
