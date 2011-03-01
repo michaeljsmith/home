@@ -13,3 +13,6 @@
 [submodule "vim/vim-colours-dark-lord"]
 	path = vim/vim-colours-dark-lord
 	url = git@github.com:michaeljsmith/vim-colours-dark-lord.git
+[submodule "vim/vim-indent-object"]
+	path = vim/vim-indent-object
+	url = git@github.com:michaeljsmith/vim-indent-object.git

@@ -15,7 +15,7 @@ set guioptions=c
 set guifont=Droid\ Sans\ Mono\ 10
 
 " Set up indent object.
-set runtimepath+=~/src/vim/vim-indent-object
+set runtimepath+=~/.home/vim/vim-indent-object
 
 " Set up vcscommand.
 set runtimepath+=~/.home/vim/vcscommand
