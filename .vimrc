@@ -7,6 +7,8 @@ set diffopt=filler,iwhite,vertical
 
 set ts=4 sw=4
 
+set t_Co=256
+
 filetype indent on
 set bg=dark
 set guioptions=c
