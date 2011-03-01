@@ -44,5 +44,3 @@ map \b :FufBuffer<CR>
 map \d :FufDir<CR>
 
 syn on
-
-set bg=light

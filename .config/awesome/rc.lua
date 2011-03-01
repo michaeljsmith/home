@@ -13,11 +13,11 @@ require("beautiful")
 beautiful.init("/home/msmith/.config/awesome/themes/default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "urxvt"
-editor = os.getenv("EDITOR") or "gvim"
+terminal = "gnome-terminal"
+editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
-browser = "google-chrome"
+browser = "/opt/google/chrome/google-chrome"
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
@@ -304,13 +304,13 @@ awful.rules.rules = {
     { rule = { class = "pinentry" },
       properties = { floating = true } },
     { rule = { class = "gimp" },
-      properties = { floating = true } },
-		{ rule = { class = "Skype" },
-			properties = {tag = tags[1][3] } },
-		{ rule = { class = "Google-chrome" },
-			properties = {tag = tags[1][2] } },
-		{ rule = { class = "Pidgin" },
-			properties = {tag = tags[1][3] } },
+      properties = { floating = true } }
+		-- { rule = { class = "Skype" },
+		-- 	properties = {tag = tags[1][3] } },
+		-- { rule = { class = "Google-chrome" },
+		-- 	properties = {tag = tags[1][2] } },
+		-- { rule = { class = "Pidgin" },
+		-- 	properties = {tag = tags[1][3] } },
 		--{ rule = { class = "urxvt" },
 		--	properties = { opacity = 0.7 } },
     -- Set Firefox to always map on tags number 2 of screen 1.
@@ -335,13 +335,13 @@ client.add_signal("manage", function (c, startup)
 
 	 c.size_hints_honor = false
 
-		if c.class == "URxvt" or c.class == "Gvim" then
-			c.opacity = 0.7
-		end
+		--if c.class == "URxvt" or c.class == "Gvim" then
+		--	c.opacity = 0.7
+		--end
 
-		if c.class == "Skype" or c.class == "Pidgin" then
-			c.opacity = 0.8
-		end
+		--if c.class == "Skype" or c.class == "Pidgin" then
+		--	c.opacity = 0.8
+		--end
 
     if not startup then
         -- Set the windows at the slave,
