@@ -34,6 +34,9 @@ set runtimepath+=~/src/vim/vim-fuzzyfinder
 " Set up vim-surround.
 set runtimepath+=~/.home/vim/vim-surround
 
+" Set up vim-fugitive.
+set runtimepath+=~/.home/vim/vim-fugitive
+
 filetype off
 filetype on
 
