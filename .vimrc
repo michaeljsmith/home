@@ -48,6 +48,10 @@ map \f :FufFile<CR>
 map \b :FufBuffer<CR>
 map \d :FufDir<CR>
 
+nmap ] :cn<CR>
+nmap [ :cp<CR>
+nmap \ :cclose<CR>
+
 syn on
 " From slime.vim
 function Send_to_Screen(text)
