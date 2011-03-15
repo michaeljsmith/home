@@ -84,3 +84,6 @@ vmap <C-j><C-j> "ry :call Send_to_Screen(@r)<CR>
 nmap <C-j><C-j> vip<C-j><C-j>
 
 nmap <C-j>v :call Screen_Vars()<CR>
+
+map <Leader>g :call fuf#givenfile#launch('', 0, "git ls-files", split(system("git ls-files"), "\n"))<CR>
+
