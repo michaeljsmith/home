@@ -88,3 +88,5 @@ nmap <C-j>v :call Screen_Vars()<CR>
 map <Leader>g :call fuf#givenfile#launch('', 0, "git ls-files> ", split(system("git ls-files"), "\n"))<CR>
 let g:fuf_maxMenuWidth=200
 
+nmap 8 :Ggrep <cword><CR>
+
