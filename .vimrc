@@ -50,8 +50,8 @@ map \f :FufFile<CR>
 map \b :FufBuffer<CR>
 map \d :FufDir<CR>
 
-nmap ] :cn<CR>
-nmap [ :cp<CR>
+nmap { :cp<CR>
+nmap } :cn<CR>
 nmap \ :cclose<CR>
 
 syn on
