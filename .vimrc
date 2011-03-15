@@ -85,6 +85,6 @@ nmap <C-j><C-j> vip<C-j><C-j>
 
 nmap <C-j>v :call Screen_Vars()<CR>
 
-map <Leader>g :call fuf#givenfile#launch('', 0, "git ls-files", split(system("git ls-files"), "\n"))<CR>
+map <Leader>g :call fuf#givenfile#launch('', 0, "git ls-files> ", split(system("git ls-files"), "\n"))<CR>
 let g:fuf_maxMenuWidth=200
 
