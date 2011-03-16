@@ -96,6 +96,6 @@ function! GitGrep(text)
   redraw!
 endfunction
 
-nmap 8 :call GitGrep(expand("<cword>"))<CR>
+nmap 8 :call GitGrep("\"\\<" . expand("<cword>") . "\\>\"")<CR>
 
 command! -nargs=1 Ugrep :call GitGrep(<q-args>)
