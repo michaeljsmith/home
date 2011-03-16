@@ -46,9 +46,9 @@ filetype on
 
 nmap  :wall<CR>
 
-map \f :FufFile<CR>
-map \b :FufBuffer<CR>
-map \d :FufDir<CR>
+map <Leader>f :FufFile<CR>
+map <Leader>b :FufBuffer<CR>
+map <Leader>d :FufDir<CR>
 
 nmap { :cp<CR>
 nmap } :cn<CR>
