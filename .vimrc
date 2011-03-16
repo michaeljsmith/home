@@ -40,7 +40,7 @@ set runtimepath+=~/.home/vim/vim-surround
 set runtimepath+=~/.home/vim/vim-fugitive
 
 " Set up command-t
-set runtimepath+=~/.home/vim/command-t
+"set runtimepath+=~/.home/vim/command-t
 filetype off
 filetype on
 
