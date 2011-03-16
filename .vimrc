@@ -89,6 +89,8 @@ map <Leader>g :call fuf#givenfile#launch('', 0, "git ls-files> ", split(system("
 map * :call fuf#givenfile#launch(expand("<cword>"), 0, "git ls-files> ", split(system("bash -c \"(git ls-files; git ls-files --other --exclude-standard)\""), "\n"))<CR>
 let g:fuf_maxMenuWidth=200
 
+map <Leader>h :call fuf#givenfile#launch('', 0, ".files> ", split(system("ls -d ~/.home/.*"), "\n"))<CR>
+
 function! GitGrep(text)
   silent exe "Ggrep! " . a:text
   copen
