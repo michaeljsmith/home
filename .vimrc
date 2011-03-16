@@ -49,7 +49,7 @@ nmap  :wall<CR>
 map <Leader>f :FufFile<CR>
 map <Leader>b :FufBuffer<CR>
 map <Leader>d :FufDir<CR>
-map <Leader>t :FufTag<CR>
+map <Leader>t :call system("bash -c \"(git ls-files; git ls-files --other --exclude-standard) \| xargs ctags -R\"")<CR>:FufTag<CR>
 
 nmap { :cp<CR>
 nmap } :cn<CR>
