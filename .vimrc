@@ -52,7 +52,7 @@ map \d :FufDir<CR>
 
 nmap { :cp<CR>
 nmap } :cn<CR>
-nmap \ :cclose<CR>
+nmap \ :pclose<CR>:cclose<CR>
 
 syn on
 " From slime.vim
