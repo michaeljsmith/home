@@ -91,6 +91,8 @@ let g:fuf_maxMenuWidth=200
 
 map <Leader>h :call fuf#givenfile#launch('', 0, ".files> ", split(system("ls -d ~/.home/.*"), "\n"))<CR>
 
+map <Leader>s :Gstatus<CR>
+
 function! GitGrep(text)
   silent exe "Ggrep! " . a:text
   copen
