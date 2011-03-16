@@ -90,8 +90,7 @@ map * :call fuf#givenfile#launch(expand("<cword>"), 0, "git ls-files> ", split(
 let g:fuf_maxMenuWidth=200
 
 function! GitGrep(text)
-  silent exe "Ggrep " . a:text
-  cc
+  silent exe "Ggrep! " . a:text
   copen
   redraw!
 endfunction
