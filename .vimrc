@@ -49,6 +49,7 @@ nmap  :wall<CR>
 map <Leader>f :FufFile<CR>
 map <Leader>b :FufBuffer<CR>
 map <Leader>d :FufDir<CR>
+map <Leader>t :FufTag<CR>
 
 nmap { :cp<CR>
 nmap } :cn<CR>
