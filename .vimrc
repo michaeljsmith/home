@@ -44,6 +44,7 @@ set runtimepath+=~/.home/vim/vim-fugitive
 filetype off
 filetype on
 
+set fo=croql tw=78
 nmap  :wall<CR>
 
 map <Leader>f :FufFile<CR>
