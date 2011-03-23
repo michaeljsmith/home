@@ -44,17 +44,21 @@ set runtimepath+=~/.home/vim/vim-fugitive
 filetype off
 filetype on
 
-set fo=croql tw=78
-nmap  :wall<CR>
+set fo=croql tw=98
 
-map <Leader>f :FufFile<CR>
-map <Leader>b :FufBuffer<CR>
-map <Leader>d :FufDir<CR>
-map <Leader>t :call system("bash -c \"(git ls-files; git ls-files --other --exclude-standard) \| xargs ctags -R\"")<CR>:FufTag<CR>
+nmap  ;wall<CR>
 
-nmap { :cp<CR>
-nmap } :cn<CR>
-nmap \ :pclose<CR>:cclose<CR>
+noremap ; :
+noremap : ;
+
+map <Leader>f ;FufFile<CR>
+map <Leader>b ;FufBuffer<CR>
+map <Leader>d ;FufDir<CR>
+map <Leader>t ;call system("bash -c \"(git ls-files; git ls-files --other --exclude-standard) \| xargs ctags -R\"")<CR>;FufTag<CR>
+
+nmap { ;cp<CR>
+nmap } ;cn<CR>
+nmap \ ;pclose<CR>;cclose<CR>
 
 syn on
 " From slime.vim
@@ -82,18 +86,18 @@ endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-vmap <C-j><C-j> "ry :call Send_to_Screen(@r)<CR>
+vmap <C-j><C-j> "ry ;call Send_to_Screen(@r)<CR>
 nmap <C-j><C-j> vip<C-j><C-j>
 
-nmap <C-j>v :call Screen_Vars()<CR>
+nmap <C-j>v ;call Screen_Vars()<CR>
 
-map <Leader>g :call fuf#givenfile#launch('', 0, "git ls-files> ", split(system("bash -c \"(git ls-files; git ls-files --other --exclude-standard)\""), "\n"))<CR>
-map * :call fuf#givenfile#launch(expand("<cword>"), 0, "git ls-files> ", split(system("bash -c \"(git ls-files; git ls-files --other --exclude-standard)\""), "\n"))<CR>
+map <Leader>g ;call fuf#givenfile#launch('', 0, "git ls-files> ", split(system("bash -c \"(git ls-files; git ls-files --other --exclude-standard)\""), "\n"))<CR>
+map * ;call fuf#givenfile#launch(expand("<cword>"), 0, "git ls-files> ", split(system("bash -c \"(git ls-files; git ls-files --other --exclude-standard)\""), "\n"))<CR>
 let g:fuf_maxMenuWidth=200
 
-map <Leader>h :call fuf#givenfile#launch('', 0, ".files> ", split(system("ls -d ~/.home/.*"), "\n"))<CR>
+map <Leader>h ;call fuf#givenfile#launch('', 0, ".files> ", split(system("ls -d ~/.home/.*"), "\n"))<CR>
 
-map <Leader>s :Gstatus<CR>
+map <Leader>s ;Gstatus<CR>
 
 function! GitGrep(text)
   silent exe "Ggrep! " . a:text
@@ -101,6 +105,8 @@ function! GitGrep(text)
   redraw!
 endfunction
 
-nmap 8 :call GitGrep("\"\\<" . expand("<cword>") . "\\>\"")<CR>
+nmap 8 ;call GitGrep("\"\\<" . expand("<cword>") . "\\>\"")<CR>
 
-command! -nargs=1 Ugrep :call GitGrep(<q-args>)
+command! -nargs=1 Ugrep ;call GitGrep(<q-args>)
+
+map <Leader>l ;!git5 lint > glint.out<CR>:cfile glint.out<CR>:silent !rm glint.out<CR>:redraw!<CR>
