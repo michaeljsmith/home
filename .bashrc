@@ -13,3 +13,4 @@ export PATH=/home/msmith/bin:$PATH
 alias gs="git status"
 alias gl="git log"
 alias gc="git add . && git commit -a"
+alias gb="git branch"
