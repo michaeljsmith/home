@@ -7,11 +7,10 @@ xfce4-panel &
 #tint2 &
 /usr/lib/xfce4/xfce4-notifyd &
 xfce4-volumed &
-wicd-client &
+wicd-gtk &
 skype &
 pidgin &
 google-chrome --memory-model=low &
-emacs --daemon
 
 while true;
 do
