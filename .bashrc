@@ -2,6 +2,9 @@
 # Check for an interactive session
 [ -z "$PS1" ] && return
 
+
+# Set more generous bash history size.
+export HISTSIZE=5000
 alias ls='ls --color=auto'
 PS1='[\u \w]\$ '
 
