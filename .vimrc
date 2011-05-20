@@ -2,6 +2,7 @@ set hidden
 set exrc
 set incsearch
 set noswapfile
+set nowrap
 
 set diffopt=filler,iwhite,vertical
 
