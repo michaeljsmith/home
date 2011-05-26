@@ -8,6 +8,8 @@ export HISTSIZE=5000
 alias ls='ls --color=auto'
 PS1='[\u \w]\$ '
 
+. /etc/bash_completion
+
 #export EDITOR="emacsclient -t"
 export EDITOR="vim"
 export PATH=/home/msmith/bin:$PATH
@@ -24,6 +26,8 @@ alias gl="git log"
 complete -o default -o nospace -F _git_log gl
 alias gd="git diff"
 complete -o default -o nospace -F _git_diff gd
+alias gh="git show"
+complete -o default -o nospace -F _git_show gh
 alias gc="git commit -a"
 complete -o default -o nospace -F _git_commit gc
 alias gg="git add . && git commit -a"
