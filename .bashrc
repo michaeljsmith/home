@@ -28,7 +28,7 @@ alias gd="git diff"
 complete -o default -o nospace -F _git_diff gd
 alias gh="git show"
 complete -o default -o nospace -F _git_show gh
-alias gc="git commit -a"
+alias gc="git commit"
 complete -o default -o nospace -F _git_commit gc
 alias gg="git add . && git commit -a"
 complete -o default -o nospace -F _git_commit gg
