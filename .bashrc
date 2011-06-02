@@ -46,3 +46,5 @@ alias gm="git rm"
 complete -o default -o nospace -F _git_rm gm
 alias gt="git stash"
 complete -o default -o nospace -F _git_stash gt
+alias gk="git cherry-pick"
+complete -o default -o nospace -F _git_cherry_pick gk
