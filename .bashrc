@@ -6,9 +6,16 @@
 # Set more generous bash history size.
 export HISTSIZE=5000
 alias ls='ls --color=auto'
-PS1='[\u \w]\$ '
 
 . /etc/bash_completion
+
+# Showing git branches in bash prompt
+# Originally from
+# http://nuts-and-bolts-of-cakephp.com/2010/11/27/show-git-branch-in-your-bash-prompt/
+function parse_git_branch {
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/:\1/'
+}
+PS1="[\w\$(parse_git_branch)]\$ "
 
 #export EDITOR="emacsclient -t"
 export EDITOR="vim"
