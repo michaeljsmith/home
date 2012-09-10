@@ -31,8 +31,8 @@ colorscheme darklord
 "set runtimepath+=~/src/jest/contrib/vim
 
 " Set up fuzzy finder.
-set runtimepath+=~/src/vim/vim-l9
-set runtimepath+=~/src/vim/vim-fuzzyfinder
+set runtimepath+=~/.home/vim/vim-l9
+set runtimepath+=~/.home/vim/vim-fuzzyfinder
 
 " Set up vim-surround.
 set runtimepath+=~/.home/vim/vim-surround

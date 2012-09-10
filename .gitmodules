@@ -22,3 +22,9 @@
 [submodule "vim/command-t"]
 	path = vim/command-t
 	url = git://git.wincent.com/command-t.git
+[submodule "vim/vim-fuzzyfinder"]
+	path = vim/vim-fuzzyfinder
+	url = https://github.com/vim-scripts/FuzzyFinder
+[submodule "vim/vim-l9"]
+	path = vim/vim-l9
+	url = https://github.com/vim-scripts/L9.git
