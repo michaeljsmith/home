@@ -3,6 +3,7 @@ set exrc
 set incsearch
 set noswapfile
 set nowrap
+set history=1000
 
 set diffopt=filler,iwhite,vertical
 
