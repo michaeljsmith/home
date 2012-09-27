@@ -43,6 +43,12 @@ set runtimepath+=~/.home/vim/vim-fugitive
 
 " Set up command-t
 "set runtimepath+=~/.home/vim/command-t
+
+" Support google indentation requirements.
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+
 filetype off
 filetype on
 
