@@ -5,6 +5,18 @@ set noswapfile
 set nowrap
 set history=1000
 
+noremap ' `
+noremap ` '
+
+let mapleader = ","
+
+set wildmenu
+set wildmode=list:longest
+
+set title
+
+set shortmess=atI
+
 set diffopt=filler,iwhite,vertical
 
 set ts=4 sw=4
