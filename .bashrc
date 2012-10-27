@@ -12,10 +12,13 @@ alias ls='ls --color=auto'
 # Showing git branches in bash prompt
 # Originally from
 # http://nuts-and-bolts-of-cakephp.com/2010/11/27/show-git-branch-in-your-bash-prompt/
-function parse_git_branch {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/:\1/'
+function parse_git_indicator {
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/:/'
 }
-PS1="[\w\$(parse_git_branch)]\$ "
+function parse_git_branch {
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
+}
+PS1="\[\033[00;36m\]\t \[\033[00m\][\[\033[01;32m\]\w\[\033[00m\]\$(parse_git_indicator)\[\033[01;31m\]\$(parse_git_branch)\[\033[00m\]]\$ "
 
 #export EDITOR="emacsclient -t"
 export EDITOR="vim"
