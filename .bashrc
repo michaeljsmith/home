@@ -18,7 +18,7 @@ function parse_git_indicator {
 function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
 }
-PS1="\t [\[\033[01;32m\]\w\[\033[00m\]\$(parse_git_indicator)\[\033[01;31m\]\$(parse_git_branch)\[\033[00m\]]\$ "
+PS1="\t [\[\033[01;32m\]\w\[\033[00m\]\$(parse_git_indicator)\[\033[00;33m\]\$(parse_git_branch)\[\033[00m\]]\$ "
 
 #export EDITOR="emacsclient -t"
 export EDITOR="vim"
