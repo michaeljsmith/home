@@ -53,9 +53,6 @@ set runtimepath+=~/.home/vim/vim-surround
 " Set up vim-fugitive.
 set runtimepath+=~/.home/vim/vim-fugitive
 
-" Set up command-t
-"set runtimepath+=~/.home/vim/command-t
-
 " Support google indentation requirements.
 set expandtab
 set shiftwidth=2
