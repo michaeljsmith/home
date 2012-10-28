@@ -25,7 +25,7 @@ set t_Co=256
 
 set laststatus=2
 
-filetype indent on
+filetype plugin indent on
 set bg=dark
 set guioptions=c
 set guifont=Droid\ Sans\ Mono\ 10
