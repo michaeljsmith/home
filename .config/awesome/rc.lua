@@ -202,7 +202,6 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey, "Shift"		}, "g", function () awful.util.spawn(browser) end),
     awful.key({ modkey, "Shift"		}, "e", function () awful.util.spawn("eclipse37") end),
     awful.key({ modkey, "Control" }, "r", awesome.restart),
-    awful.key({ modkey, "Shift"   }, "q", awesome.quit),
 
     awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)    end),
     awful.key({ modkey,           }, "h",     function () awful.tag.incmwfact(-0.05)    end),
