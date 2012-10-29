@@ -13,6 +13,8 @@ let mapleader = ","
 set wildmenu
 set wildmode=list:longest
 
+set scrolloff=20
+
 set title
 
 set shortmess=atI
