@@ -14,7 +14,7 @@ let mapleader = ","
 set wildmenu
 set wildmode=list:longest
 
-set scrolloff=10
+set scrolloff=4
 
 set title
 
