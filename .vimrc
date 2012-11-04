@@ -4,6 +4,7 @@ set incsearch
 set noswapfile
 set nowrap
 set history=1000
+set hlsearch
 
 noremap ' `
 noremap ` '
@@ -65,7 +66,7 @@ filetype on
 
 set fo=croql tw=98
 
-nmap  ;wall<CR>
+nmap  ;noh<CR>;wall<CR>
 
 noremap ; :
 noremap : ;
