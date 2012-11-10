@@ -71,6 +71,9 @@ nmap  ;noh<CR>;wall<CR>
 noremap ; :
 noremap : ;
 
+map <F10> ;copen<CR>
+map <S-F10> ;cclose<CR>
+
 map <Leader>f ;FufFile<CR>
 map <Leader>b ;FufBuffer<CR>
 map <Leader>d ;FufDir<CR>
