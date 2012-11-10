@@ -36,9 +36,6 @@ set guifont=Droid\ Sans\ Mono\ 10
 " Set up indent object.
 set runtimepath+=~/.home/vim/vim-indent-object
 
-" Set up vcscommand.
-set runtimepath+=~/.home/vim/vcscommand
-
 " Set up colour scheme.
 set runtimepath+=~/.home/vim/vim-colours-dark-lord
 colorscheme darklord

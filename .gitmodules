@@ -7,9 +7,6 @@
 [submodule "vim/vim-surround"]
 	path = vim/vim-surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule "vim/vcscommand"]
-	path = vim/vcscommand
-	url = git://repo.or.cz/vcscommand
 [submodule "vim/vim-colours-dark-lord"]
 	path = vim/vim-colours-dark-lord
 	url = git@github.com:michaeljsmith/vim-colours-dark-lord.git
@@ -19,9 +16,6 @@
 [submodule "vim/vim-fugitive"]
 	path = vim/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "vim/command-t"]
-	path = vim/command-t
-	url = git://git.wincent.com/command-t.git
 [submodule "vim/vim-fuzzyfinder"]
 	path = vim/vim-fuzzyfinder
 	url = https://github.com/vim-scripts/FuzzyFinder
