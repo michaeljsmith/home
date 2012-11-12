@@ -61,7 +61,7 @@ set softtabstop=2
 filetype off
 filetype on
 
-set fo=croql tw=98
+set fo=croql tw=78
 
 nmap  ;noh<CR>;wall<CR>
 
@@ -70,6 +70,7 @@ noremap : ;
 
 map <F10> ;copen<CR>
 map <S-F10> ;cclose<CR>
+map <C-F10> ;cclose<CR>
 
 map <Leader>f ;FufFile<CR>
 map <Leader>b ;FufBuffer<CR>
