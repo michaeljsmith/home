@@ -131,3 +131,6 @@ nmap 8 ;call GitGrep("\"\\<" . expand("<cword>") . "\\>\"")<CR>
 command! -nargs=1 Ugrep ;call GitGrep(<q-args>)
 
 map <Leader>l ;!git5 lint > glint.out<CR>;cfile glint.out<CR>;silent !rm glint.out<CR>;redraw!<CR>
+
+nnoremap & *<c-o>ciw
+vnoremap & "vy/<c-r>v<CR><c-o>gvc
