@@ -2,9 +2,17 @@
 # Check for an interactive session
 [ -z "$PS1" ] && return
 
+# Better bash history options
+shopt -s histappend
+HISTCONTROL=ignoreboth
+HISTIGNORE='ls:bg:fg:history'
+
+# Save history at each prompt
+PROMPT_COMMAND='history -a'
 
 # Set more generous bash history size.
-export HISTSIZE=5000
+HISTFILESIZE=10000
+HISTSIZE=10000
 alias ls='ls --color=auto'
 
 . /etc/bash_completion
@@ -39,7 +47,7 @@ alias gh="git show"
 complete -o default -o nospace -F _git_show gh
 alias gc="git commit"
 complete -o default -o nospace -F _git_commit gc
-alias gg="git add . && git commit -a"
+alias gg="git add -A . && git commit -a"
 complete -o default -o nospace -F _git_commit gg
 alias ge="git reset"
 complete -o default -o nospace -F _git_reset ge
