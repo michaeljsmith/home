@@ -22,3 +22,6 @@
 [submodule "vim/vim-l9"]
 	path = vim/vim-l9
 	url = https://github.com/vim-scripts/L9.git
+[submodule "vim/vim-slime"]
+	path = vim/vim-slime
+	url = https://github.com/jpalardy/vim-slime.git
