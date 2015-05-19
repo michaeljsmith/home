@@ -40,8 +40,8 @@ function pedit {
 
 function mass-rename {
   f=$(mktemp)
-  ls $a | sed -e"s/\(.*\)/mv \1\t\1/" | column -s$'\t' -t > $f
-  if $EDITOR $f
+  sed -e"s/\(.*\)/mv \"\1\"\t\"\1\"/" | column -s$'\t' -t > $f
+  if </dev/tty $EDITOR $f
   then
     bash $f
   fi
