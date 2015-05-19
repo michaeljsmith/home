@@ -38,6 +38,15 @@ function pedit {
   cat $f
 }
 
+function mass-rename {
+  f=$(mktemp)
+  ls $a | sed -e"s/\(.*\)/mv \1\t\1/" | column -s$'\t' -t > $f
+  if $EDITOR $f
+  then
+    bash $f
+  fi
+}
+
 # Git shortcuts.
 alias go="git checkout"
 complete -o default -o nospace -F _git_checkout go
