@@ -33,26 +33,6 @@ set bg=dark
 set guioptions=c
 set guifont=Droid\ Sans\ Mono\ 10
 
-" Set up indent object.
-set runtimepath+=~/.home/vim/vim-indent-object
-
-" Set up colour scheme.
-set runtimepath+=~/.home/vim/vim-colours-dark-lord
-colorscheme darklord
-
-" Set up jest filetype.
-"set runtimepath+=~/src/jest/contrib/vim
-
-" Set up fuzzy finder.
-set runtimepath+=~/.home/vim/vim-l9
-set runtimepath+=~/.home/vim/vim-fuzzyfinder
-
-" Set up vim-surround.
-set runtimepath+=~/.home/vim/vim-surround
-
-" Set up vim-fugitive.
-set runtimepath+=~/.home/vim/vim-fugitive
-
 " Support google indentation requirements.
 set expandtab
 set shiftwidth=2
