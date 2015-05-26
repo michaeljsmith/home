@@ -1,3 +1,23 @@
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-fugitive'
+Plugin 'L9'
+Plugin 'FuzzyFinder'
+Plugin 'michaeljsmith/vim-colours-dark-lord'
+Plugin 'michaeljsmith/vim-indent-object'
+
+call vundle#end()
+
+filetype plugin indent on
+
 set hidden
 set exrc
 set incsearch
@@ -28,7 +48,6 @@ set t_Co=256
 
 set laststatus=2
 
-filetype plugin indent on
 set bg=dark
 set guioptions=c
 set guifont=Droid\ Sans\ Mono\ 10
