@@ -22,3 +22,7 @@
 	added = yellow
 	changed = green
 	untracked = cyan
+[receive]
+	denyCurrentBranch = warn
+[push]
+	default = simple
