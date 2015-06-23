@@ -31,6 +31,22 @@ PS1="\t [\[\033[01;32m\]\w\[\033[00m\]\$(parse_git_indicator)\[\033[00;33m\]\$(p
 export EDITOR="vim"
 export PATH=$HOME/bin:$PATH
 
+function pedit {
+  f=$(mktemp)
+  cat > $f
+  </dev/tty >/dev/tty $EDITOR $f
+  cat $f
+}
+
+function mass-rename {
+  f=$(mktemp)
+  sed -e"s/\(.*\)/mv \"\1\"\t\"\1\"/" | column -s$'\t' -t > $f
+  if </dev/tty $EDITOR $f
+  then
+    bash $f
+  fi
+}
+
 # Git shortcuts.
 alias go="git checkout"
 complete -o default -o nospace -F _git_checkout go
