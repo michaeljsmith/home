@@ -29,7 +29,7 @@ function parse_git_branch {
 PS1="\t [\[\033[01;32m\]\w\[\033[00m\]\$(parse_git_indicator)\[\033[00;33m\]\$(parse_git_branch)\[\033[00m\]]\$ "
 
 export EDITOR="vim"
-export PATH=/home/msmith/bin:$PATH
+export PATH=$HOME/bin:$PATH
 
 # Git shortcuts.
 alias go="git checkout"
